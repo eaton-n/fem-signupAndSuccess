@@ -1,0 +1,169 @@
+/* Mobile: 375px */
+/* Desktop: 1440px */
+
+:root {
+	--primary-400: hsl(4, 100%, 67%);
+	--neutral-100: hsl(0, 0%, 100%);
+	--neutral-200: hsl(231, 7%, 60%);
+	--neutral-400: hsl(235, 18%, 26%);
+	--neutral-600: hsl(234, 29%, 20%);
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--neutral-100);
+	height: 100%;
+	margin: 0;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin: 0;
+	padding: 0.3rem 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* li > p {
+	margin-bottom: 0.25rem;
+} */
+
+span {
+	padding: 0;
+	margin-right: 0.5rem;
+	background-color: var(--primary-400);
+	border-radius: 50%;
+	color: var(--neutral-100);
+}
+
+.container {
+	margin: 0 auto;
+	background-color: var(--neutral-100);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.img-lg {
+	display: none;
+}
+/* .image {
+	width: 100%;
+	height: auto;
+} */
+
+form {
+	padding: 1.5rem;
+}
+
+label {
+	display: block;
+	font-size: 0.75rem;
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+}
+
+input[type='email'],
+button[type='submit'] {
+	padding: 0.75rem;
+	border-radius: 10px;
+	width: 90%;
+}
+
+button[type='submit'] {
+	margin-top: 1rem;
+	background-color: var(--neutral-600);
+	color: var(--neutral-100);
+	font-weight: 700;
+	width: 100%;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 376px) {
+	body {
+		background-color: var(--neutral-400);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container {
+		flex-direction: row-reverse;
+		padding: 1rem;
+		max-width: 900px;
+	}
+	.img-lg {
+		display: unset;
+	}
+	.img-sm {
+		display: none;
+	}
+	h2 {
+		font-size: 3rem;
+		padding-top: 2rem;
+	}
+}
+
+.success {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--neutral-100);
+	height: 100%;
+	padding: 0 2rem;
+}
+
+.success-icon {
+	width: 5rem;
+	margin: 10rem 0 3rem 0;
+}
+
+.email {
+	background-color: inherit;
+	color: inherit;
+	font-weight: 700;
+}
+
+.success-btn {
+	background-color: var(--primary-400);
+	color: var(--neutral-100);
+	border-radius: 10px;
+	background-color: var(--neutral-600);
+	color: var(--neutral-100);
+	margin-top: 5rem;
+	padding: 1rem;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+p > span {
+	margin: 0;
+}
+
+@media screen and (min-width: 376px) {
+	.success {
+		max-width: 400px;
+		padding: 2rem;
+		border-radius: 20px;
+	}
+
+	.success-icon {
+		width: 5rem;
+		margin: 0;
+	}
+
+	.success-btn {
+		margin-top: 2rem;
+	}
+}
