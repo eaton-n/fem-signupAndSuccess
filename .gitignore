@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Sketch, Figma and xd files
+*.sketch
+*.fig
+*.xd
+
+# 
+newsletter-sign-up-with-success-message-main
